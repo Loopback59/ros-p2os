@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find p2os_launch)/p2os_driver.launch" />
+	
+	<node pkg="p2os_dashboard" type="p2os_dashboard" name="p2os_dashboard" />
+	
+	<!-- Choose a control method -->
+	<!-- <include file="$(find p2os_launch)/teleop_joy.launch" /> -->
+	<include file="$(find p2os_launch)/teleop_kbd.launch" />
+</launch>

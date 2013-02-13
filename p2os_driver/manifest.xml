@@ -1,0 +1,19 @@
+<package>
+  <description brief="p2os_driver">
+     The p2os_driver provides low level support for robots using the Pioneer P2OS/ARCOS protocol via a ROS node. 
+  </description>
+  <author>dfseifer@usc.edu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://www.ros.org/wiki/p2os_driver</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="tf"/>
+  <depend package="diagnostic_updater"/>
+  <export>
+    <cpp cflags="-I${prefix}/include -I${prefix}/msg/cpp"/>
+  </export>
+</package>
+
+

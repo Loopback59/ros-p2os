@@ -1,0 +1,11 @@
+<launch>
+	<master auto="start"/>
+	
+	<!-- Run gMapping -->
+	<include file="$(find p2os_launch)/gmapping.launch" />
+
+	<!-- Run navigation -->
+	<include file="$(find p2os_launch)/navigation.launch" />
+
+
+</launch>

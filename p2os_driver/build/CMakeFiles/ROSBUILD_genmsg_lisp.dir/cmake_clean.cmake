@@ -1,0 +1,41 @@
+FILE(REMOVE_RECURSE
+  "../msg_gen"
+  "../src/p2os_driver/msg"
+  "../msg_gen"
+  "CMakeFiles/ROSBUILD_genmsg_lisp"
+  "../msg_gen/lisp/GripState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_GripState.lisp"
+  "../msg_gen/lisp/SonarState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_SonarState.lisp"
+  "../msg_gen/lisp/BatteryState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_BatteryState.lisp"
+  "../msg_gen/lisp/MotorState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_MotorState.lisp"
+  "../msg_gen/lisp/GripperState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_GripperState.lisp"
+  "../msg_gen/lisp/SonarArray.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_SonarArray.lisp"
+  "../msg_gen/lisp/AIO.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_AIO.lisp"
+  "../msg_gen/lisp/LiftState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_LiftState.lisp"
+  "../msg_gen/lisp/PTZState.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_PTZState.lisp"
+  "../msg_gen/lisp/DIO.lisp"
+  "../msg_gen/lisp/_package.lisp"
+  "../msg_gen/lisp/_package_DIO.lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/ROSBUILD_genmsg_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

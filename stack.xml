@@ -1,0 +1,22 @@
+<stack>
+  <description brief="P2OS/ARCOS device support">
+  
+		This stack provides support for robots using P2OS or ARCOS firmware. 
+		This stack also includes urdf definitions for visualization and examples to control the robot.
+
+	</description>
+  <author>Maintained by David Feil-Seifer (dfseifer@usc.edu)</author>
+  <license>BSD,GPLv2</license>  
+  <review status="experimental" notes="Many bug-fixes to support ROS-F"/>
+  <url>http://ros.org/wiki/p2os</url>
+  <depend stack="common" /> <!-- xacro -->
+  <depend stack="common_msgs" /> <!-- nav_msgs, geometry_msgs, sensor_msgs -->
+  <depend stack="diagnostics" /> <!-- diagnostic_updater -->
+  <depend stack="diagnostics_monitors" /> <!-- robot_monitor -->
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="robot_model" /> <!-- robot_state_publisher, urdf -->
+  <depend stack="ros" /> <!-- roslib -->
+  <depend stack="ros_comm" /> <!-- std_msgs, std_srvs, rospy, roscpp -->
+  <depend stack="rx" /> <!-- rxtools -->
+
+</stack>
