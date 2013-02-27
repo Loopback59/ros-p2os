@@ -52,14 +52,14 @@ int main( int argc, char* argv[] )
   
   // Odometry test
   bool publish_odom = true;
-  n_.param("publish_odom", publish_odom, publish_odom);
+  n_.param("publish_odom_test", publish_odom, publish_odom);
   ros::Publisher odom_pub;
   if(publish_odom) odom_pub = n.advertise<nav_msgs::Odometry>("odom", 50);
   tf::TransformBroadcaster odom_broadcaster;
 
   // Sonar Range Test
   bool publish_sonar = true;
-  n_.param("publish_sonar", publish_sonar, publish_sonar);
+  n_.param("publish_sonar_test", publish_sonar, publish_sonar);
   ros::Publisher sonar_pub;
   if(publish_sonar) sonar_pub = n.advertise<sensor_msgs::Range>("Sonar", 1000);;
   sensor_msgs::Range sonar;
@@ -109,7 +109,7 @@ int main( int argc, char* argv[] )
 		    
 		// Wheel joints
     sensor_msgs::JointState js;
-	  wheel_rot += vw * dt;
+	  wheel_rot += (vx / (2 * 3.14 * 0.18)) * dt;
 	  
     // P3-DX
 	  js.name.push_back(std::string("base_swivel_joint"));

@@ -3,6 +3,7 @@
 import roslib; roslib.load_manifest('p2os_teleop')
 import rospy
 from geometry_msgs.msg import Twist
+
 import threading
 import time
 import termios, sys, os
